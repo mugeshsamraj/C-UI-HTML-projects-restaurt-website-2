@@ -1,0 +1,465 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --color-primary-1: #030307;
+  --color-primary-2: #0b0d1a;
+  --color-primary-3: #14162e;
+  /* primary/main color */
+  --color-primary-4: #1c2042;
+  /* lighter shades of primary color */
+  --color-primary-5: #60637b;
+  --color-primary-6: #a4a6b3;
+  --color-primary-7: #e8e9ec;
+  --clr-white: #ffffff;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+/* Boiler plate Code */
+
+/* Project Code */
+  body{
+    background: linear-gradient(to right, rgb(234,106,145), rgb(170, 39, 170));
+    margin: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .navbar{
+    width: 100%;
+  }
+
+  .navbar .navbar-list{
+    display: flex;
+    padding: 20px 0px 20px;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .navbar .navbar-list li{
+    width: 13%;
+    background-color: yellow;
+    text-align: center;
+    padding:10px;
+    font-weight: bold;
+  }
+  .section1{
+    width: 100%;
+    display: flex;
+    margin:0px;
+  }
+  .image-taco {
+    width: 70%;
+    position: relative;
+  }
+
+  .img-text1 {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    background-color: #ffae19;
+    font-size: 20px;
+    padding:10px;
+    width: 220px;
+    height: 35px;
+    font-weight: bold;
+  }
+  .img-text2 {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+    background-color: #ffae19;
+    font-size: 10px;
+    padding:10px;
+    width: 125px;
+    height: 50px;
+    font-weight: bold;
+  }
+
+  .tacos{
+    width: 98%;
+    height: 620px;
+  }
+
+  .dollar{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dollar1{
+    background-color: yellow;
+    width:100%;
+    height: 295px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    padding: 100px;
+  }
+
+  .dollar2{
+    background-color: yellow;
+    width:100%;
+    height: 295px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 100px;
+  }
+
+  /* .dollar1 p, .dollar2 p{
+    padding: 100px;
+  } */
+
+  .section2{
+    width:100%;
+    display: flex;
+  }
+
+  .image1, .image2, .image3{
+    background-color: white;
+    padding: 20px;
+    margin:20px 20px 20px 0px;
+  }
+
+  .image4{
+    background-color: white;
+    padding: 20px;
+    margin:20px 0px 20px 0px;
+  }
+
+  .img-tacos, .img-beer, .img-wine, .img-music{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .section2-content{
+    text-align: center;
+    padding:10px;
+  }
+
+  .fa-hamburger{
+    color: rgb(0, 238, 255);
+  }
+
+  .fa-beer{
+    color: orange;
+  }
+
+  .fa-wine-glass-alt{
+    color:rgb(170, 39, 170);
+  }
+
+  .fa-music{
+    color: gold
+  }
+  .section3{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display:flex;
+  }
+
+  .content-section3{
+    padding:60px;
+  }
+
+  button{
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .section4{
+    width: 100%;
+    position: relative;
+  }
+  
+  .line{
+    width: 45%;
+    height: 20px;
+    background: linear-gradient(to right, rgb(238, 237, 155), rgb(245, 241, 29));
+    float: left;
+  }
+  .line-grams{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 46%;
+  }
+
+  .line1{
+    width: 45%;
+    height: 20px;
+    background: linear-gradient(to left, rgb(238, 237, 155), rgb(245, 241, 29));
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px
+  }
+  .section5{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+    margin: 20px 0px;
+  }
+
+  .section5 .img_first{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 0px;
+  }
+
+  .section5 .img_end{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 10px;
+  }
+
+  .section5 .img_center{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+/* Project Code */
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar .navbar-list{
+    display: none;
+  }
+  
+  .navbar .nav-list-menu{
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    width: 100px;
+    background: yellow;
+  }
+
+  .fa-bars{
+    display: block;
+  }
+
+  .section1{
+    flex-direction: column;
+  }
+
+  .image-taco, .tacos, .dollar {
+    width: 100%;
+  }
+
+  .dollar1, .dollar2{
+    padding:100px 25px;
+  }
+
+  .section2{
+    flex-wrap: wrap;
+  }
+
+  .image1, .image2, .image3, .image4{
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .section3{
+    flex-direction: column;
+  }
+
+  .section3-img{
+    width: 90%;
+    padding-left: 100px;
+  }
+
+  .content-section3{
+    text-align: center;
+  }
+
+  .section4{
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+ 
+  .navbar .navbar-list{
+    display: none;
+  }
+  
+  .navbar .nav-list-menu{
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    width: 100px;
+    background: yellow;
+  }
+
+  .fa-bars{
+    display: block;
+  }
+
+  .section1{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-taco, .tacos, .dollar {
+    width: 100%;
+  }
+
+  .dollar1, .dollar2{
+    padding:100px 25px;
+  }
+
+  .section2{
+    flex-wrap: wrap;
+  }
+
+  .image1, .image2, .image3, .image4{
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .section3{
+    flex-direction: column;
+  }
+
+  .section3-img{
+    width: 90%;
+    padding-left: 100px;
+  }
+
+  .content-section3{
+    text-align: center;
+  }
+
+  .section4{
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar .navbar-list{
+    display: none;
+  }
+  
+  .navbar .nav-list-menu{
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    width: 100px;
+    background: yellow;
+  }
+
+  .fa-bars{
+    display: block;
+  }
+
+  .section1{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-taco, .tacos, .dollar {
+    width: 100%;
+  }
+
+  .dollar1, .dollar2{
+    padding:100px 50px;
+  }
+
+  .section2{
+    flex-wrap: nowrap;
+  }
+
+  .image1, .image2, .image3{
+    margin:20px 20px 20px 0px;
+  }
+
+  .image4{
+    margin:20px 0px 20px 0px;
+  }
+
+  .section3{
+    flex-direction: row;
+  }
+
+  .section4{
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .navbar .navbar-list{
+    display: flex;
+  }
+
+  .navbar .navbar-list li{
+    overflow: hidden;
+  }
+
+  .navbar .nav-list-menu{
+    display: none;
+  }
+  
+  .fa-bars{
+    display: none;
+  }
+
+  .section1{
+    flex-direction: row;
+  }
+
+  .image-taco {
+    width: 70%;
+  }
+
+  .dollar{
+    width: 30%;
+  }
+
+  .section4{
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
